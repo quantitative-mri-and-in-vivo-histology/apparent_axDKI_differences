@@ -1,0 +1,4 @@
+
+*.nii
+data/results/
+data/simulation/noisy_data/
