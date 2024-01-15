@@ -5,7 +5,7 @@
 </div>
 
 # Description
-Code used for simulation and analysis of "Investigating apparent differences between standard DKI and axisymmetric DKI and its consequences for biophysical parameter estimates". 
+Code used for simulation and analysis of data used for paper "Investigating apparent differences between standard DKI and axisymmetric DKI and its consequences for biophysical parameter estimates". 
 # Installation
 ## Clone repository
 ```bash
