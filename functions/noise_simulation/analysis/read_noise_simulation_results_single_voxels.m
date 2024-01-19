@@ -32,7 +32,7 @@ function [direct_values_table,voxel_names] = read_noise_simulation_results_singl
                             path_out = [pth filesep 'single_voxels' filesep voxel_names{inx_voxel} filesep 'simulated_SNR_' num2str(simulation_parameters.simulated_SNRs(inx_snr)) filesep protocol_folder filesep];
 
                             parameter_path = [path_out 'derivatives' filesep derivatives_subfolder filesep 'SNR_' num2str(simulation_parameters.simulated_SNRs(inx_snr)) ...
-                                '_simulation_with_' simulation_parameters.measurement_protocol{inx_protocol} '_protocol_' voxel_names{inx_voxel} '_desc-' dki_model{inx_dki_model} '-' table_entries{inx_AxTM} '_map.nii'];
+                                '_' simulation_parameters.measurement_protocol{inx_protocol} '_protocol_voxel_' num2str(inx_voxel) '_desc-' dki_model{inx_dki_model} '-' table_entries{inx_AxTM} '_map.nii'];
 
                             vol_tmp = spm_vol(parameter_path);
                             parameter = acid_read_vols(vol_tmp,vol_tmp,1);
