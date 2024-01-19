@@ -10,7 +10,7 @@ function [direct_values_table,voxel_names] = read_noise_simulation_results_singl
 
     load([path_of_script filesep '..' filesep 'data' filesep 'simulation' filesep 'noisy_data' filesep 'single_voxels' filesep 'ground_truth_tables' filesep 'ground_truth_AxTM_table.mat'])
 
-    b0_simulation_volume = spm_vol([pth filesep 'single_voxels'  filesep 'AW_voxel1_minus_0_comma_039'  filesep 'simulated_SNR_100'  filesep 'standard'  filesep 'derivatives'  filesep 'DKIax-NLLS' filesep 'SNR_100_simulation_with_standard_protocol_AW_voxel1_minus_0_comma_039_desc-DKIax-NLLS-S0.nii']);
+    b0_simulation_volume = spm_vol([pth filesep 'single_voxels'  filesep 'AW_voxel1_minus_0_comma_039'  filesep 'simulated_SNR_100'  filesep 'standard'  filesep 'derivatives'  filesep 'DKIax-NLLS' filesep 'SNR_100_standard_protocol_voxel_1_desc-DKIax-NLLS-S0.nii']);
     b0_simulation = acid_read_vols(b0_simulation_volume,b0_simulation_volume,1);
     mask = find(b0_simulation ~=0);
 
